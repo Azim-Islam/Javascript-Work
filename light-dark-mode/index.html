@@ -12,11 +12,23 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- SWITCH -->
+    <div class="theme-switch-wrapper">
+      <span id="toggle-icon">
+        <span class="toggle-text">Light Mode</span>
+        <i class="fas fa-sun"></i>
+      </span>
+      <label class="theme-switch">
+        <input type="checkbox" />
+        <div class="slider round"></div>
+      </label>
+    </div>
+
     <nav id="nav">
       <a href="#home">HOME</a>
       <a href="#about">ABOUT</a>
       <a href="#buttons">BUTTONS</a>
-      <a href="#project">PROJECTS</a>
+      <a href="#contact">CONTACT</a>
     </nav>
 
     <!-- Home Section START -->
@@ -70,20 +82,37 @@
     </section>
     <!-- Category Section END -->
 
-    <!-- Banner Section START -->
+    <!-- Button Section START -->
     <section id="buttons">
       <div class="title-group">
         <h1>BUTTONS</h1>
-        <h2>Here Will Be Some Banners</h2>
+        <div class="buttons">
+          <button class="primary">Primary</button>
+          <button class="secondary">Primary</button>
+          <button class="primary" disabled>Disabled</button>
+          <button class="outline">Outline</button>
+          <button class="secondary outline">All Outline</button>
+          <button class="outline" disabled>Disabled</button>
+        </div>
+      </div>
+      <div class="text-box" id="text-box">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+          praesentium nulla magnam soluta tempora, a assumenda officia rerum,
+          ipsum sint in natus doloribus vero quam. Omnis magnam hic atque culpa?
+        </p>
       </div>
     </section>
-    <!-- Banner Section END -->
+    <!-- Button Section END -->
 
     <!-- Projects Section START -->
-    <section id="project">
-      <div class="title-group">
-        <h1>Projects</h1>
-        <h2>This section should show some projects</h2>
+    <section id="contact">
+      <div class="social-icons">
+        <i class="fab fa-github-alt"></i>
+        <i class="fab fa-discord"></i>
+        <i class="fab fa-youtube"></i>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-linkedin"></i>
       </div>
     </section>
     <!-- Project Section END -->
