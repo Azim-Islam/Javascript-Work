@@ -9,8 +9,8 @@ let isFormValid = false;
 let passwordMatch = false;
 
 function messageStyleGreen(){
-    message.style.color = 'green';
-    messageContainer.style.borderColor = 'green';
+    message.style.color = '#2E7D32';
+    messageContainer.style.borderColor = '#2E7D32';
 }
 
 function messageStyleRed(){
