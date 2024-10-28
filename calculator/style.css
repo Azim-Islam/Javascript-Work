@@ -1,0 +1,121 @@
+
+html {
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  min-height: 100vh;
+  background: hsla(42, 93%, 57%, 1);
+  background-color: #FBAB7E;
+  background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+  transition: all 0.3s ease-in-out;
+  }
+
+.calculator {
+  background: #FFE0B2;
+  width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 5px 30px -5px;
+}
+
+.calculator-display {
+  background: black;
+  color: white;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 10px 10px 0 0;
+}
+
+.calculator-display h1{
+  font-family: 'Lucida Console', sans-serif;
+  font-size: 45px;
+  padding: 25px;
+  margin: 0px;
+  font-weight: 100;
+  overflow-x: auto;
+}
+
+
+.calculator-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.equal-sign {
+  background-color: #7CB342 !important;
+  grid-column: -2;
+  grid-row: 2 / span 4;
+  &:hover{
+    background-color: #9CCC65 !important;
+  }
+}
+
+button {
+  min-height: 60px;
+  font-size: 20px;
+  font-weight: 100;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #FFFDE7;
+  font-weight: 600;
+  transition: transform 0.3s ease-in-out;
+  &:hover {
+    background-color: #FFF59D;
+  }
+  &:active {
+    transform: translateY(10px) rotate(5deg);
+  }
+}
+
+.operator{
+  background-color: #FFCC80;
+  border-style: solid;
+  border-width: 1px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.clear {
+  color: white;
+  background: #E53935;
+  &:hover {
+    background-color: #F44336;
+  }
+}
+
+/* CUSTOM SCROLL BAR START  */
+ ::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #181717;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+} 
+/* CUSTOM SCROLL BAR END  */
+
+
+
+@media screen and (max-width: 576px){
+  .calculator {
+    width: 95% ;
+  }
+}
+
