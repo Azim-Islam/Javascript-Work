@@ -1,0 +1,34 @@
+.loader{
+    background: rgba(25, 25, 25, 0.25);
+}
+
+.text-center{
+    padding: 10px;
+}
+
+.loader-bar{
+    height: 5px;
+    width: 50%;
+    background-color: white;
+    border-radius: 2px;
+}
+
+
+.loader-bar-after{
+    display: block;
+    height: 5px;
+    width: 0%;
+    background-color: rgb(242, 52, 52);
+    border-radius: 2px;
+    z-index: 10;
+    animation: 10s ease-in 1 running loadAnimation;
+}
+
+@keyframes loadAnimation {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
