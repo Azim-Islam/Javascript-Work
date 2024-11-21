@@ -8,7 +8,7 @@ const text = document.getElementById('text');
 const animationTime = 3000;
 
 function showAnimation(animationTime) {
-    loaderBar.style.animationDuration = `${animationTime / 1000}s`;
+    loaderBar!.style.animationDuration = `${animationTime / 1000}s`;
     console.log(loaderBar);
     loaderContainer.classList.replace('d-none', 'd-block');
 }
@@ -28,9 +28,11 @@ function hideAnimation() {
 // });
 
 function genSleep(animationTime) {
-    return new Promise(function (resolve, reject) {
-        setTimeout(() => { resolve('Sleep Time Ended') }, animationTime);
-    });
+    return new Promise((resolve) => setTimeout(resolve, animationTime));
+}
+async function genSleep2(animationTime) {
+    const value = false;
+    return { value };
 }
 
 async function asyncStart(animationTime) {
